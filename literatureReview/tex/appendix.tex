@@ -72,3 +72,34 @@ ddF <- dada(derepFs[1:10], err=NULL, selfConsist=TRUE)
 # Reverse
 ddR <- dada(derepRs[1:10], err=NULL, selfConsist=TRUE)
 \end{lstlisting}
+
+\subsubsection*{Syntax for running DADA}
+
+\begin{lstlisting}[language=R]
+# Forward
+dadaFs <- dada(derepFs, err=ddF[[1]]$err_out, pool=TRUE)
+
+# Reverse
+dadaRs <- dada(derepRs, err=ddR[[1]]$err_out, pool=TRUE)
+\end{lstlisting}
+
+\subsubsection*{Syntax for Merging and Extracting ASV}
+
+\begin{lstlisting}[language=R]
+# Merging forwards and Backward reads
+mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs)
+
+# Extracting Seqs
+seqtab.all <- makeSequenceTable(mergers)
+
+# Removing Chimeras
+seqtab <- removeBimeraDenovo(seqtab.all)
+\end{lstlisting}
+
+\subsubsection*{Syntax for Assigning Taxonomy with RDP taxonomic training data formatted for DADA2 (RDP trainset 16/release 11.5)}
+
+\begin{lstlisting}[language=R]
+# Using assignTaxonomy() from dada2
+asv_rdp_tax <- assignTaxonomy(seqtab,
+"trainingSets/rdp_train_set_16.fa.gz , multithread=TRUE)
+\end{lstlisting}

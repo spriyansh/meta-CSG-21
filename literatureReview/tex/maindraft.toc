@@ -21,9 +21,15 @@
 \contentsline {subsection}{\numberline {4.1.1}Divisive Amplicon Denoising Algorithm}{13}%
 \contentsline {section}{\numberline {4.2}MOTHUR}{14}%
 \contentsline {subsection}{\numberline {4.2.1}OptiClust}{15}%
-\contentsline {chapter}{\numberline {5}Co-occurrence Networks}{16}%
-\contentsline {section}{\numberline {5.1}Co-occurrence Networks}{16}%
-\contentsline {subsection}{\numberline {5.1.1}Pearson's Correlation }{17}%
-\contentsline {subsection}{\numberline {5.1.2}Spearman's Correlation}{17}%
-\contentsline {subsection}{\numberline {5.1.3}Bray Curtis Dissimilarity}{18}%
+\contentsline {chapter}{\numberline {6}Co-occurrence Networks}{16}%
+\contentsline {section}{\numberline {6.1}Co-occurrence Networks}{16}%
+\contentsline {subsection}{\numberline {6.1.1}Pearson's Correlation }{17}%
+\contentsline {subsection}{\numberline {6.1.2}Spearman's Correlation}{17}%
+\contentsline {subsection}{\numberline {6.1.3}Bray Curtis Dissimilarity}{18}%
+\contentsline {chapter}{\numberline {6}Co-occurrence Networks}{16}%
+\contentsline {section}{\numberline {6.1}Co-occurrence Networks}{16}%
+\contentsline {subsection}{\numberline {6.1.1}Pearson's Correlation }{17}%
+\contentsline {subsection}{\numberline {6.1.2}Spearman's Correlation}{17}%
+\contentsline {subsection}{\numberline {6.1.3}Bray Curtis Dissimilarity}{18}%
 \contentsline {chapter}{Bibliography}{19}%
+\contentsline {chapter}{Appendices}{19}%

@@ -1,0 +1,74 @@
+\chapter*{Appendix}
+
+\pagenumbering{arabic} \setcounter{page}{21}
+
+\subsection*{DADA2 Pipeline}
+The follwoing pipeline is written in R version 4.0.5 (2021-03-31)
+
+\subsubsection*{Syntax for loading libraries}
+
+\begin{lstlisting}[language=R]
+# Required Libraries
+library(dada2) # Version 1.18.0
+library(ggplot2) # Version 3.3.3
+library(DECIPHER) # Version 2.18.1
+library(phangorn) # Version 2.5.5
+library(phyloseq) # Version 1.34.0
+\end{lstlisting}
+
+\subsubsection*{Syntax for setting filepaths and conventions}
+
+\begin{lstlisting}[language=R]
+# Reading path for untrimmed fastq files
+untrimmed <- file.path("fastqFiles/")
+
+# Sorting the filenames
+fns <- sort(list.files(untrimmed, full.names = TRUE))
+
+# Roots for forward reads
+fnFs <- fns[grepl("_R1", fns)]
+
+# Roots for reverse reads
+fnRs <- fns[grepl("_R2", fns)]
+
+# Directory for filtered output (Removal of Ns)
+filtFs <- file.path("filtered",fnFs) # Forward
+filtRs <- file.path("filtered",fnRs) # Reverse
+
+names(filtFs) <- fnFs # Forward
+names(filtRs) <- fnRs # Reverse
+\end{lstlisting}
+
+\subsubsection*{Syntax for quality control (QC-Trim)}
+
+\begin{lstlisting}[language=R]
+out <- filterAndTrim(fwd = fnFs, # Roots for forward reads
+  filt = filtFs, # Path for filtered forward reads
+  rev = fnRs, # Roots for reverse reads
+  filt.rev = filtRs, # Path for filtered reverse reads
+  maxN = 0, # Removing Ns
+  maxEE = c(2,2),
+  truncQ = 0, truncLen = 245, # Trimming start/stop
+  rm.phix=FALSE, multithread=TRUE,
+  compress = T)
+\end{lstlisting}
+
+\subsubsection*{Syntax for dereplicating}
+
+\begin{lstlisting}[language=R]
+derepFs <- derepFastq(filtFs)
+derepRs <- derepFastq(filtRs)
+sam.names <- sapply(strsplit(basename(filtFs), "_"), '[', 1)
+names(derepFs) <- sam.names
+names(derepRs) <- sam.names
+\end{lstlisting}
+
+\subsubsection*{Syntax for error model estimation}
+
+\begin{lstlisting}[language=R]
+# Forward
+ddF <- dada(derepFs[1:10], err=NULL, selfConsist=TRUE)
+
+# Reverse
+ddR <- dada(derepRs[1:10], err=NULL, selfConsist=TRUE)
+\end{lstlisting}

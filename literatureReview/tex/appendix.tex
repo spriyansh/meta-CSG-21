@@ -58,7 +58,7 @@ out <- filterAndTrim(fwd = fnFs, # Roots for forward reads
 \begin{lstlisting}[language=R]
 derepFs <- derepFastq(filtFs)
 derepRs <- derepFastq(filtRs)
-sam.names <- sapply(strsplit(basename(filtFs), "_"), '[', 1)
+sam.names<-sapply(strsplit(basename(filtFs),"_"),'[', 1)
 names(derepFs) <- sam.names
 names(derepRs) <- sam.names
 \end{lstlisting}
@@ -96,10 +96,63 @@ seqtab.all <- makeSequenceTable(mergers)
 seqtab <- removeBimeraDenovo(seqtab.all)
 \end{lstlisting}
 
-\subsubsection*{Syntax for Assigning Taxonomy with RDP taxonomic training data formatted for DADA2 (RDP trainset 16/release 11.5)}
+\subsubsection*{Syntax for Assigning Taxonomy with RDP taxonomic training data 
+formatted for DADA2 (RDP trainset 16/release 11.5)}
 
 \begin{lstlisting}[language=R]
 # Using assignTaxonomy() from dada2
 asv_rdp_tax <- assignTaxonomy(seqtab,
 "trainingSets/rdp_train_set_16.fa.gz , multithread=TRUE)
+\end{lstlisting}
+
+\subsection*{\newline MOTHUR Pipeline}
+The follwoing pipeline is from MOTHUR Version 1.35.1
+
+\subsubsection*{Syntax for making contigs}
+
+\begin{lstlisting}[language=R]
+make.contigs(file=stability.files, processors=8)
+\end{lstlisting}
+
+\subsubsection*{Syntax for trimming}
+
+\begin{lstlisting}[language=R]
+screen.seqs(fasta,groups,maxambig=0,maxlength=275)
+\end{lstlisting}
+
+\subsubsection*{Syntax for trimming}
+
+\begin{lstlisting}[language=R]
+screen.seqs(trim.fasta,stability.groups,maxlength=275)
+\end{lstlisting}
+
+\subsubsection*{Syntax for dereplication}
+
+\begin{lstlisting}[language=R]
+unique.seqs(fasta=stability.trim.contigs.good.fasta)
+\end{lstlisting}
+
+\subsubsection*{Syntax for taxanomic Assignment}
+
+\begin{lstlisting}[language=R]
+align.seqs(fasta=unique.fasta,reference=silva.v4.fasta)
+\end{lstlisting}
+
+
+\subsubsection*{Syntax for OTU clustering}
+
+\begin{lstlisting}[language=R]
+pre.cluster(unique.fasta,otu_table,diffs=2)
+\end{lstlisting}
+
+\subsubsection*{Syntax for Counting OTUs}
+
+\begin{lstlisting}[language=R]
+chimera.vsearch(cluster.fq,otu_table,dereplicate=t)
+\end{lstlisting}
+
+\subsubsection*{Syntax for removing chimeras}
+
+\begin{lstlisting}[language=R]
+remove.seqs(fasta=precluster.fq,accnos=denovo.fq)
 \end{lstlisting}

@@ -1,0 +1,29 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}%
+\contentsline {section}{\numberline {1.1}Overview}{1}%
+\contentsline {section}{\numberline {1.2}Impact of Genomics}{2}%
+\contentsline {section}{\numberline {1.3}Soil Ecology}{2}%
+\contentsline {chapter}{\numberline {2}Metagenomics Essentials}{4}%
+\contentsline {subsection}{\numberline {2.0.1}Sampling}{4}%
+\contentsline {subsection}{\numberline {2.0.2}Sample Quality \& Metadata}{4}%
+\contentsline {subsection}{\numberline {2.0.3}Sequencing}{5}%
+\contentsline {subsection}{\numberline {2.0.4}Sequence Coverage}{5}%
+\contentsline {subsection}{\numberline {2.0.5}Assembly}{6}%
+\contentsline {subsection}{\numberline {2.0.6}Binning}{7}%
+\contentsline {subsection}{\numberline {2.0.7}Functional Annotation}{7}%
+\contentsline {subsection}{\numberline {2.0.8}Future}{8}%
+\contentsline {chapter}{\numberline {3}16s-rRNA Sequencing}{9}%
+\contentsline {subsection}{\numberline {3.0.1}16s ribosomal RNA}{9}%
+\contentsline {subsection}{\numberline {3.0.2}16s Amplicon Sequencing}{10}%
+\contentsline {subsection}{\numberline {3.0.3}Operational Taxonomic Units}{10}%
+\contentsline {subsection}{\numberline {3.0.4}Amplicon Sequence Variants}{12}%
+\contentsline {chapter}{\numberline {4}Pipelines \& Algorithms}{13}%
+\contentsline {section}{\numberline {4.1}DADA}{13}%
+\contentsline {subsection}{\numberline {4.1.1}Divisive Amplicon Denoising Algorithm}{13}%
+\contentsline {section}{\numberline {4.2}MOTHUR}{14}%
+\contentsline {subsection}{\numberline {4.2.1}OptiClust}{15}%
+\contentsline {chapter}{\numberline {5}Co-occurrence Networks}{16}%
+\contentsline {section}{\numberline {5.1}Co-occurrence Networks}{16}%
+\contentsline {subsection}{\numberline {5.1.1}Pearson's Correlation }{17}%
+\contentsline {subsection}{\numberline {5.1.2}Spearman's Correlation}{17}%
+\contentsline {subsection}{\numberline {5.1.3}Bray Curtis Dissimilarity}{18}%
+\contentsline {chapter}{Bibliography}{19}%

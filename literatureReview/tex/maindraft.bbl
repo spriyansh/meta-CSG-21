@@ -1,8 +1,76 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Raven1992}
-A.~Raven.
-\newblock Power/interaction model of interpersonal influence.
-\newblock {\em Journal of Social Behavior and Personality}, 7:217--244, 1992.
+\bibitem{ref11}
+T.~Thomas, J.~Gilbert, and F.~Meyer, ``Metagenomics - a guide from sampling to
+  data analysis,'' {\em Microbial Informatics and Experimentation}, vol.~2, 02
+  2012.
+
+\bibitem{ref1}
+J.~C. Wooley, A.~Godzik, and I.~Friedberg, ``A primer on metagenomics,'' {\em
+  PLoS Computational Biology}, vol.~6, p.~e1000667, 02 2010.
+
+\bibitem{ref2}
+R.~D. Berg, ``The indigenous gastrointestinal microflora,'' {\em Trends in
+  microbiology}, vol.~4, pp.~430--5, 1996.
+
+\bibitem{ref3}
+I.~Laudadio, V.~Fulci, L.~Stronati, and C.~Carissimi, ``Next-generation
+  metagenomics: Methodological challenges and opportunities,'' {\em OMICS: A
+  Journal of Integrative Biology}, vol.~23, pp.~327--333, 07 2019.
+
+\bibitem{ref4}
+N.~Segata, L.~Waldron, A.~Ballarini, V.~Narasimhan, O.~Jousson, and
+  C.~Huttenhower, ``Metagenomic microbial community profiling using unique
+  clade-specific marker genes,'' {\em Nature Methods}, vol.~9, pp.~811--814, 06
+  2012.
+
+\bibitem{ref5}
+S.~Gupta, M.~S. Mortensen, S.~Schjørring, U.~Trivedi, G.~Vestergaard,
+  J.~Stokholm, H.~Bisgaard, K.~A. Krogfelt, and S.~J. Sørensen, ``Amplicon
+  sequencing provides more accurate microbiome information in healthy children
+  compared to culturing,'' {\em Communications Biology}, vol.~2, 08 2019.
+
+\bibitem{ref6}
+J.~A. Gilbert, J.~K. Jansson, and R.~Knight, ``The earth microbiome project:
+  successes and aspirations,'' {\em BMC Biology}, vol.~12, 08 2014.
+
+\bibitem{ref7}
+V.~S. Pylro, L.~F.~W. Roesch, J.~M. Ortega, A.~M. do~Amaral, M.~R. Totola,
+  P.~R. Hirsch, A.~S. Rosado, A.~Goes-Neto, A.~L. da~Costa~da Silva, C.~A.
+  Rosa, D.~K. Morais, F.~D. Andreote, G.~F. Duarte, I.~S. de~Melo, L.~Seldin,
+  M.~R. Lambais, M.~Hungria, R.~S. Peixoto, R.~H. Kruger, S.~M. Tsai, and
+  V.~Azevedo, ``Brazilian microbiome project: Revealing the unexplored
+  microbial diversity-challenges and prospects,'' {\em Microbial Ecology},
+  vol.~67, pp.~237--241, 10 2013.
+
+\bibitem{ref8}
+Z.~Wei, Y.~Gu, V.-P. Friman, G.~A. Kowalchuk, Y.~Xu, Q.~Shen, and A.~Jousset,
+  ``Initial soil microbiome composition and functioning predetermine future
+  plant health,'' {\em Science Advances}, vol.~5, 09 2019.
+
+\bibitem{ref9}
+S.~Hiraoka, C.-c. Yang, and W.~Iwasaki, ``Metagenomics and bioinformatics in
+  microbial ecology: Current status and beyond,'' {\em Microbes and
+  Environments}, vol.~31, pp.~204--212, 2016.
+
+\bibitem{ref10}
+M.~Goberna, A.~Montesinos-Navarro, A.~Valiente-Banuet, Y.~Colin,
+  A.~Gomez-Fernandez, S.~Donat, J.~A. Navarro-Cano, and M.~Verdu,
+  ``Incorporating phylogenetic metrics to microbial co-occurrence networks
+  based on amplicon sequences to discern community assembly processes,'' {\em
+  Molecular Ecology Resources}, vol.~19, pp.~1552--1564, 09 2019.
+
+\bibitem{ref12}
+D.~Field, L.~Amaral-Zettler, G.~Cochrane, J.~R. Cole, P.~Dawyndt, G.~M.
+  Garrity, J.~Gilbert, F.~O. Glockner, L.~Hirschman, I.~Karsch-Mizrachi, H.-P.
+  Klenk, R.~Knight, R.~Kottmann, N.~Kyrpides, F.~Meyer, I.~San~Gil, S.-A.
+  Sansone, L.~M. Schriml, P.~Sterk, T.~Tatusova, D.~W. Ussery, O.~White, and
+  J.~Wooley, ``The genomic standards consortium,'' {\em PLoS Biology}, vol.~9,
+  p.~e1001088, 06 2011.
+
+\bibitem{ref13}
+S.~L. Amarasinghe, S.~Su, X.~Dong, L.~Zappia, M.~E. Ritchie, and Q.~Gouil,
+  ``Opportunities and challenges in long-read sequencing data analysis,'' {\em
+  Genome Biology}, vol.~21, 02 2020.
 
 \end{thebibliography}

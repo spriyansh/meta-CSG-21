@@ -73,4 +73,33 @@ S.~L. Amarasinghe, S.~Su, X.~Dong, L.~Zappia, M.~E. Ritchie, and Q.~Gouil,
   ``Opportunities and challenges in long-read sequencing data analysis,'' {\em
   Genome Biology}, vol.~21, 02 2020.
 
+\bibitem{ref14}
+N.~J. Loman, R.~V. Misra, T.~J. Dallman, C.~Constantinidou, S.~E. Gharbia,
+  J.~Wain, and M.~J. Pallen, ``Performance comparison of benchtop
+  high-throughput sequencing platforms,'' {\em Nature Biotechnology}, vol.~30,
+  pp.~434--439, 04 2012.
+
+\bibitem{ref15}
+S.~L. Westcott and P.~D. Schloss, ``De novo clustering methods outperform
+  reference-based methods for assigning 16s rrna gene sequences to operational
+  taxonomic units,'' {\em PeerJ}, vol.~3, p.~e1487, 12 2015.
+
+\bibitem{ref16}
+B.~J. Callahan, P.~J. McMurdie, and S.~P. Holmes, ``Exact sequence variants
+  should replace operational taxonomic units in marker-gene data analysis,''
+  {\em The ISME Journal}, vol.~11, pp.~2639--2643, 07 2017.
+
+\bibitem{ref17}
+B.~J. Callahan, P.~J. McMurdie, M.~J. Rosen, A.~W. Han, A.~J.~A. Johnson, and
+  S.~P. Holmes, ``Dada2: High-resolution sample inference from illumina
+  amplicon data,'' {\em Nature Methods}, vol.~13, pp.~581--583, 05 2016.
+
+\bibitem{ref18}
+P.~D. Schloss, S.~L. Westcott, T.~Ryabin, J.~R. Hall, M.~Hartmann, E.~B.
+  Hollister, R.~A. Lesniewski, B.~B. Oakley, D.~H. Parks, C.~J. Robinson, J.~W.
+  Sahl, B.~Stres, G.~G. Thallinger, D.~J. Van~Horn, and C.~F. Weber,
+  ``Introducing mothur: Open-source, platform-independent, community-supported
+  software for describing and comparing microbial communities,'' {\em Applied
+  and Environmental Microbiology}, vol.~75, pp.~7537--7541, 10 2009.
+
 \end{thebibliography}

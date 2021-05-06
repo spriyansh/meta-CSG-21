@@ -102,4 +102,48 @@ P.~D. Schloss, S.~L. Westcott, T.~Ryabin, J.~R. Hall, M.~Hartmann, E.~B.
   software for describing and comparing microbial communities,'' {\em Applied
   and Environmental Microbiology}, vol.~75, pp.~7537--7541, 10 2009.
 
+\bibitem{munjal_2019_phylogenetics}
+G.~Munjal, M.~Hanmandlu, and S.~Srivastava, ``Phylogenetics algorithms and
+  applications,'' {\em Advances in Intelligent Systems and Computing},
+  pp.~187--194, 2019.
+
+\bibitem{lemoine_2018_renewing}
+F.~Lemoine, J.-B. Domelevo~Entfellner, E.~Wilkinson, D.~Correia,
+  M.~Davila~Felipe, T.~De~Oliveira, and O.~Gascuel, ``Renewing felsenstein's
+  phylogenetic bootstrap in the era of big data,'' {\em Nature}, vol.~556,
+  pp.~452--456, 04 2018.
+
+\bibitem{goberna_2018_phylogeneticscale}
+M.~Goberna and M.~Verdu, ``Phylogenetic-scale disparities in the soil microbial
+  diversity-ecosystem functioning relationship,'' {\em The ISME Journal},
+  vol.~12, pp.~2152--2162, 06 2018.
+
+\bibitem{weiss_2016_correlation}
+S.~Weiss, W.~Van~Treuren, C.~Lozupone, K.~Faust, J.~Friedman, Y.~Deng, L.~C.
+  Xia, Z.~Z. Xu, L.~Ursell, E.~J. Alm, A.~Birmingham, J.~A. Cram, J.~A.
+  Fuhrman, J.~Raes, F.~Sun, J.~Zhou, and R.~Knight, ``Correlation detection
+  strategies in microbial data sets vary widely in sensitivity and precision,''
+  {\em The ISME Journal}, vol.~10, pp.~1669--1681, 02 2016.
+
+\bibitem{berry_2014_deciphering}
+D.~Berry and S.~Widder, ``Deciphering microbial interactions and detecting
+  keystone species with co-occurrence networks,'' {\em Frontiers in
+  Microbiology}, vol.~5, 05 2014.
+
+\bibitem{schober_2018_correlation}
+P.~Schober, C.~Boer, and L.~A. Schwarte, ``Correlation coefficients,'' {\em
+  Anesthesia \& Analgesia}, vol.~126, pp.~1763--1768, 05 2018.
+
+\bibitem{dewinter_2016_comparing}
+J.~C.~F. de~Winter, S.~D. Gosling, and J.~Potter, ``Comparing the pearson and
+  spearman correlation coefficients across distributions and sample sizes: A
+  tutorial using simulations and empirical data.,'' {\em Psychological
+  Methods}, vol.~21, pp.~273--290, 2016.
+
+\bibitem{zhang_2019_the}
+Z.~Zhang, J.~Gao, and Y.~Cai, ``The effects of environmental factors and
+  geographic distance on species turnover in an agriculturally dominated river
+  network,'' {\em Environmental Monitoring and Assessment}, vol.~191, p.~201,
+  03 2019.
+
 \end{thebibliography}

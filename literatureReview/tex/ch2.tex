@@ -3,31 +3,29 @@
 
 This section reviews the procedural steps involved in a typical metagenomics workflow. This section also covers the pre-requisites in metagenomics which one should contemplate before setting up an experiment.
 
-\subsection{Sampling}
+\section{Sampling \& Quality Control}
 Ideally, the obtained samples should be representative of the population from which they are pooled. Moreover, the sampling should be done blindly to reduce human biases. Also, pooled samples should carry high-quality nuclear material, which decreases the signal-to-noise ratio in the downstream analysis. If the target community is linked with a host organism, selective lysis must be conducted to reduce the host DNA interference \cite{ref11}. To plan the number of samples required, a refraction curve is often used \cite{ref11}. The rarefaction curve proposes abundance of existing species as function of inspected species [Figure \ref{fig:figure1}]. It is also desirable to look for pilot studies to determine the number of samples required from a particular habitat.
 
 \begin{figure}
   \centering
   \includegraphics[width=9cm, height=5.5cm] {../figures/Figure1.png}
-  \caption{Typical Rarefaction Curve, It displays how many species are identified with prolonged sampling. If sampling is ample, curves should finally plateau as it becomes tougher to find new species, despite the increase in sampling. On the other hand, if the curves are steep, more sampling is required to infer ecological judgments \cite{ref11}}
+  \caption[Typical Rarefaction Curve]{Typical Rarefaction Curve displaying how many species are identified with prolonged sampling. If sampling is ample, curves should plateau as it becomes tougher to find new species, despite the increase in sampling. On the other hand, if the curves are steep, more sampling is required to infer ecological judgments \cite{ref11}}
   \label{fig:figure1}
 \end{figure}
 
-\subsection{Sample Quality \& Metadata}
 Once the samples are secured, they should be filtered to reduce the signal to noise ratio in downstream analysis. This can be achieved by either eliminating the noise (e.g. removing virome if studying bacteria) or collecting surplus signals (e.g. collection of high-quality samples) \cite{ref12}. Often it is hard to replicate metagenomic analysis as even the slightest deviation from the collection site appends variability to results. Therefore, precise documentation of the metadata is also vital to metagenomics; parameters like sampling date, time, depth, salinity, et cetera should be reported \cite{ref12}. A recent report from The Genomics Standards Consortium published a standard for reporting metagenomic metadata \cite{ref12}.
 
-\subsection{Sequencing}
+\section{Sequencing}
 Over the years, second-generation sequencing methods have taken over the area of genomics [Figure \ref{fig:figure2}]. The Sanger Shotgun sequencing method (SS), the reasonable option of researchers in the past, has been displaced by PCR based methods, especially for smaller metagenomes. Despite being labour intensive and costly, the SS sequencing method is still preferred when dealing with specimens from low-diversity environments because it gives a comprehensive portrayal of genomes \cite{ref12}. Third-generation sequencing methods are gradually becoming the preference for metagenomics as they give long reads which aid in de-novo assemblies.
 
 \begin{figure}
   \centering
   \includegraphics[width=15cm, height=6.5cm]{../figures/Figure2.png}
-  \caption{Developments in Microbiology with sequencing technology, Infographic displays the rise in the number of publications about metagenomics as the successive generations of sequencers were released starting from 2005 \cite{ref11}}
+  \caption[Development of Metagenomics]{Developments in Microbiology with sequencing technology, Infographic displays the rise in the number of publications about metagenomics as the successive generations of sequencers were released starting from 2005 \cite{ref11}}
   \label{fig:figure2}
 \end{figure}
 
-\subsection{Sequence Coverage}
-Coverage is represented by the average amount of times a nucleotide gets sequenced \cite{ref1}. Therefore, if there is a 10X coverage, then each nucleotide is sequenced ~ ten times. We can measure the expected number reads needed to sequence the whole genome by fitting a Poisson distribution model, which is derived through the Lander-Waterman equation as follows,
+Sequence coverage is represented by the average amount of times a nucleotide gets sequenced \cite{ref1}. Therefore, if there is a 10X coverage, then each nucleotide is sequenced ~ ten times. We can measure the expected number reads needed to sequence the whole genome by fitting a Poisson distribution model, which is derived through the Lander-Waterman equation as follows,
 
 \begin{equation} 
   Coverage (C) = \frac{L * N}{G}
@@ -55,7 +53,7 @@ For metagenomic sampling,
 
 Where, $G_{i}$ is size of metagenome containing l genomes; $n_{i}$ is the number of copies of $G_{i}$
 
-\subsection{Assembly}
+\section{Assembly \& Binning}
 Assembly of contigs is one of the requisite steps of any genomic data analysis. It allows the researcher to find the genomic elements such as transcription factor binding sites, open reading frames, et cetera. One can also locate notable size elements such as pathogenicity island by assembling longer reads. Like any genomic analysis, the assembly for metagenomics can be done either with a reference dataset or without it (\emph{de-novo} assembly). However, space-time complexity during de-novo assembly increases exponentially; therefore, specially tailored algorithms like de Bruijn are employed for the purpose. And, short-reads should be fabricated in large quantities to procure sufficient coverage. Different read lengths, when assembled, can generate varying information about genetic elements at various levels of complexity [Table \ref{table1}]\cite{ref1}. However, there exist potential challenges when dealing with the metagenomics data, as assembling reads from different OTUs could create interspecies chimaeras.
 
 \begin{table}[ht]
@@ -83,11 +81,7 @@ Assembly of contigs is one of the requisite steps of any genomic data analysis. 
 \label{table1}
 \end{table}
 
-\subsection{Binning}
-It refers to classifying sheared DNA sequences into taxonomic groups, which describe the individual genomes of the closely related species. Binning can be achieved using two strategies, i.e. either by Composition-based (CB) methods or by Similarity-based (SB) methods. CB binning is prone to errors; as the number and relatedness of OTUs in metagenomes increases, miscalculation frequency also increases \cite{ref11}. Therefore the CB method is preferred for the sequences which have no homologs. Even though the CB method does not yield fruitful results with short reads, the output can be improved by using training datasets of long fragments. SB methods first find the similarities with the available/provided reference dataset to generate a tree and then generate the inferences about the sequences bins. It is clearly a preferred choice of binning method for short reads as it is computationally less intensive to work with smaller contigs.
+Binning refers to classifying sheared DNA sequences into taxonomic groups, which describe the individual genomes of the closely related species. Binning can be achieved using two strategies, i.e. either by Composition-based (CB) methods or by Similarity-based (SB) methods. CB binning is prone to errors; as the number and relatedness of OTUs in metagenomes increases, miscalculation frequency also increases \cite{ref11}. Therefore the CB method is preferred for the sequences which have no homologs. Even though the CB method does not yield fruitful results with short reads, the output can be improved by using training datasets of long fragments. SB methods first find the similarities with the available/provided reference dataset to generate a tree and then generate the inferences about the sequences bins. It is clearly a preferred choice of binning method for short reads as it is computationally less intensive to work with smaller contigs.
 
-\subsection{Functional Annotation}
+\section{Functional Annotation}
 The functional profile of the metagenome answers vital questions about community dynamics. Ideally, the annotation shouldn't be done de-novo but using a reference dataset. Functional annotation is considerably challenging for traditional genomics data, and complexity further increases when dealing with metagenomes as the available sequences are either partial or have no homologues. The sequences which are not annotated using a reference dataset are known as ORFans and constitute a never-ending genetic recentness in metagenomics \cite{ref12}. To overcome this, one can completely overlook the gene-calling steps and utilize six-frame translation on reads; if the translated frames are adequately long, then they can be considered as ORFs; which can then be used for annotating signatures (HMM profiles etc.). The motif EXtraction (MEX) program works on the same principle and can identify enzymatic elements from sequence data.
-
-\subsection{Future}
-Metagenomics has made novel breakthroughs over the years; it has benefited ecology and has also backed up gut microbiology. Turnbaugh et al. have published a study showing a correlation between obesity and gut-microbiome. With PacBio SMRT and Oxford Nanopore's discovery, the second-generation methods will soon be replaced by long-read sequencers, which will assist de-novo assemblies and annotations \cite{ref13}.

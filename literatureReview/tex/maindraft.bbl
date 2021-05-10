@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{ref11}
-T.~Thomas, J.~Gilbert, and F.~Meyer, ``Metagenomics - a guide from sampling to
-  data analysis,'' {\em Microbial Informatics and Experimentation}, vol.~2, 02
-  2012.
-
 \bibitem{ref1}
 J.~C. Wooley, A.~Godzik, and I.~Friedberg, ``A primer on metagenomics,'' {\em
   PLoS Computational Biology}, vol.~6, p.~e1000667, 02 2010.
@@ -60,6 +55,11 @@ M.~Goberna, A.~Montesinos-Navarro, A.~Valiente-Banuet, Y.~Colin,
   based on amplicon sequences to discern community assembly processes,'' {\em
   Molecular Ecology Resources}, vol.~19, pp.~1552--1564, 09 2019.
 
+\bibitem{ref11}
+T.~Thomas, J.~Gilbert, and F.~Meyer, ``Metagenomics - a guide from sampling to
+  data analysis,'' {\em Microbial Informatics and Experimentation}, vol.~2, 02
+  2012.
+
 \bibitem{ref12}
 D.~Field, L.~Amaral-Zettler, G.~Cochrane, J.~R. Cole, P.~Dawyndt, G.~M.
   Garrity, J.~Gilbert, F.~O. Glockner, L.~Hirschman, I.~Karsch-Mizrachi, H.-P.
@@ -67,11 +67,6 @@ D.~Field, L.~Amaral-Zettler, G.~Cochrane, J.~R. Cole, P.~Dawyndt, G.~M.
   Sansone, L.~M. Schriml, P.~Sterk, T.~Tatusova, D.~W. Ussery, O.~White, and
   J.~Wooley, ``The genomic standards consortium,'' {\em PLoS Biology}, vol.~9,
   p.~e1001088, 06 2011.
-
-\bibitem{ref13}
-S.~L. Amarasinghe, S.~Su, X.~Dong, L.~Zappia, M.~E. Ritchie, and Q.~Gouil,
-  ``Opportunities and challenges in long-read sequencing data analysis,'' {\em
-  Genome Biology}, vol.~21, 02 2020.
 
 \bibitem{ref14}
 N.~J. Loman, R.~V. Misra, T.~J. Dallman, C.~Constantinidou, S.~E. Gharbia,
@@ -102,6 +97,11 @@ P.~D. Schloss, S.~L. Westcott, T.~Ryabin, J.~R. Hall, M.~Hartmann, E.~B.
   software for describing and comparing microbial communities,'' {\em Applied
   and Environmental Microbiology}, vol.~75, pp.~7537--7541, 10 2009.
 
+\bibitem{goberna_2018_phylogeneticscale}
+M.~Goberna and M.~Verdu, ``Phylogenetic-scale disparities in the soil microbial
+  diversity-ecosystem functioning relationship,'' {\em The ISME Journal},
+  vol.~12, pp.~2152--2162, 06 2018.
+
 \bibitem{munjal_2019_phylogenetics}
 G.~Munjal, M.~Hanmandlu, and S.~Srivastava, ``Phylogenetics algorithms and
   applications,'' {\em Advances in Intelligent Systems and Computing},
@@ -112,11 +112,6 @@ F.~Lemoine, J.-B. Domelevo~Entfellner, E.~Wilkinson, D.~Correia,
   M.~Davila~Felipe, T.~De~Oliveira, and O.~Gascuel, ``Renewing felsenstein's
   phylogenetic bootstrap in the era of big data,'' {\em Nature}, vol.~556,
   pp.~452--456, 04 2018.
-
-\bibitem{goberna_2018_phylogeneticscale}
-M.~Goberna and M.~Verdu, ``Phylogenetic-scale disparities in the soil microbial
-  diversity-ecosystem functioning relationship,'' {\em The ISME Journal},
-  vol.~12, pp.~2152--2162, 06 2018.
 
 \bibitem{weiss_2016_correlation}
 S.~Weiss, W.~Van~Treuren, C.~Lozupone, K.~Faust, J.~Friedman, Y.~Deng, L.~C.
@@ -145,5 +140,9 @@ Z.~Zhang, J.~Gao, and Y.~Cai, ``The effects of environmental factors and
   geographic distance on species turnover in an agriculturally dominated river
   network,'' {\em Environmental Monitoring and Assessment}, vol.~191, p.~201,
   03 2019.
+
+\bibitem{faust_2012_microbial}
+K.~Faust and J.~Raes, ``Microbial interactions: from networks to models,'' {\em
+  Nature Reviews Microbiology}, vol.~10, pp.~538--550, 07 2012.
 
 \end{thebibliography}

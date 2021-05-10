@@ -8,9 +8,7 @@
 \usepackage{alltt}
 \usepackage{hyphenat}
 \usepackage{xcolor}
-%\usepackage{appendix}
 \usepackage{listings}
-%\usepackage{biblatex}
 
 \title{Assessing the impact of gene sequence clustering strategies in
 determining microbe-microbe interactions}
@@ -36,13 +34,11 @@ microbe interactions}}
 \vspace{1.25cm} Priyansh Srivastava \vspace{1.25cm} \\ to \vspace{.5cm} \\
 The Discipline of Bioinformatics, \\ School of Mathematics, Statistics \& Applied Mathematics \\ National University \textit{of} Ireland, Galway \vspace{1cm} \\ in partial fulfilment of
 the requirements for the degree of \\ \vspace{.5cm} M.Sc. in
-Computational Genomics \vspace{1cm} \\ April 23rd 2020 \\
+Computational Genomics \vspace{1cm} \\ May 10th 2021 \\
 \vspace{1.25cm} Thesis Supervisor: Dr Alexandre De Menezes}
 
 \end{center}
 \end{titlepage}
-
-%\maketitle
 
 \include{abstract}
 
@@ -51,7 +47,10 @@ Computational Genomics \vspace{1cm} \\ April 23rd 2020 \\
 \newpage
 
 \listoffigures
+\begingroup
+\let\clearpage\relax
 \listoftables
+\endgroup
 
 \include{introduction}
 \include{ch2}
@@ -60,14 +59,12 @@ Computational Genomics \vspace{1cm} \\ April 23rd 2020 \\
 \include{ch5}
 \include{ch6}
 \include{ch7}
+\include{Aims}
 
 
 %Included for Gather Purpose only:
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{ieeetr}
 \bibliography{mybibliography}
-
-%\addcontentsline{toc}{chapter}{Appendices}
-%\include{appendix}
 
 \end{document}

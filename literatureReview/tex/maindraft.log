@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.5)  6 MAY 2021 09:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.5)  10 MAY 2021 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -81,30 +81,24 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
-Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count176
-\c@@ppsavesec=\count177
-\c@@ppsaveapp=\count178
-)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count179
+\lst@mode=\count176
 \lst@gtempboxa=\box45
 \lst@token=\toks17
-\lst@length=\count180
+\lst@length=\count177
 \lst@currlwidth=\dimen137
-\lst@column=\count181
-\lst@pos=\count182
+\lst@column=\count178
+\lst@pos=\count179
 \lst@lostspace=\dimen138
 \lst@width=\dimen139
-\lst@newlines=\count183
-\lst@lineno=\count184
+\lst@newlines=\count180
+\lst@lineno=\count181
 \lst@maxwidth=\dimen140
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count185
-\lst@skipnumbers=\count186
+\c@lstnumber=\count182
+\lst@skipnumbers=\count183
 \lst@framebox=\box46
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -114,40 +108,40 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count187
+\l__kernel_color_stack_int=\count184
 \l__pdf_internal_box=\box47
 )
 (./maindraft.aux (./abstract.aux) (./introduction.aux) (./ch2.aux) (./ch3.aux)
-(./ch4.aux) (./ch5.aux) (./ch6.aux) (./appendix.aux))
+(./ch4.aux) (./ch5.aux) (./ch6.aux) (./ch7.aux))
 \openout1 = `maindraft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count188
+\scratchcounter=\count185
 \scratchdimen=\dimen141
 \scratchbox=\box48
-\nofMPsegments=\count189
-\nofMParguments=\count190
+\nofMPsegments=\count186
+\nofMParguments=\count187
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count191
+\MPscratchCnt=\count188
 \MPscratchDim=\dimen142
-\MPnumerator=\count192
-\makeMPintoPDFobject=\count193
+\MPnumerator=\count189
+\makeMPintoPDFobject=\count190
 \everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -158,11 +152,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count194
+\c@lstlisting=\count191
 <logo.png, id=1, 134.00063pt x 39.14626pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 27.
+Package pdftex.def Info: logo.png  used on input line 26.
 (pdftex.def)             Requested size: 170.71652pt x 49.87227pt.
 
 [1
@@ -220,7 +214,7 @@ so-mal RNA (16s-rRNA)
 
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 11--57
+Underfull \hbox (badness 10000) in paragraph at lines 11--56
 
  []
 
@@ -332,7 +326,33 @@ Overfull \hbox (8.55283pt too wide) in paragraph at lines 9--10
 
 
 
-] [19]) [20] (./maindraft.bbl [21
+] [19]) [20]
+\openout2 = `ch7.aux'.
+
+ (./ch7.tex
+Chapter 7.
+[21
+
+
+
+]
+<../figures/Figure6.png, id=112, 800.9925pt x 406.51875pt>
+File: ../figures/Figure6.png Graphic file (type png)
+<use ../figures/Figure6.png>
+Package pdftex.def Info: ../figures/Figure6.png  used on input line 17.
+(pdftex.def)             Requested size: 341.43785pt x 170.71188pt.
+<../figures/Figure7.png, id=113, 1483.5425pt x 784.9325pt>
+File: ../figures/Figure7.png Graphic file (type png)
+<use ../figures/Figure7.png>
+Package pdftex.def Info: ../figures/Figure7.png  used on input line 24.
+(pdftex.def)             Requested size: 398.32077pt x 227.61261pt.
+<../figures/Figure8.png, id=114, 1050.92625pt x 778.91pt>
+File: ../figures/Figure8.png Graphic file (type png)
+<use ../figures/Figure8.png>
+Package pdftex.def Info: ../figures/Figure8.png  used on input line 31.
+(pdftex.def)             Requested size: 398.32983pt x 227.61336pt.
+) [22 <../figures/Figure6.png (PNG copy)>] [23 <../figures/Figure7.png (PNG cop
+y)>] [24 <../figures/Figure8.png (PNG copy)>] (./maindraft.bbl [25
 
 
 ]
@@ -341,65 +361,39 @@ Underfull \hbox (badness 2556) in paragraph at lines 57--62
 lin,
  []
 
-[22]
+[26]
 Underfull \hbox (badness 3219) in paragraph at lines 111--115
 []\OT1/cmr/m/n/12 F. Lemoine, J.-B. Domelevo Ent-fell-ner, E. Wilkin-son, D. Co
 r-reia,
  []
 
-) [23]
-\openout2 = `appendix.aux'.
-
- (./appendix.tex
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/09/10 1.8c listings language file
-)
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
-3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 23.
- [21
-
-
-] [22]) [23]
-(./maindraft.aux (./abstract.aux) (./introduction.aux) (./ch2.aux) (./ch3.aux)
-(./ch4.aux) (./ch5.aux) (./ch6.aux) (./appendix.aux)) ) 
+) [27] (./maindraft.aux (./abstract.aux) (./introduction.aux) (./ch2.aux)
+(./ch3.aux) (./ch4.aux) (./ch5.aux) (./ch6.aux) (./ch7.aux)) ) 
 Here is how much of TeX's memory you used:
- 4423 strings out of 481239
- 57563 string characters out of 5920377
- 496424 words of memory out of 5000000
- 19604 multiletter control sequences out of 15000+600000
- 539187 words of font info for 46 fonts, out of 8000000 for 9000
+ 3271 strings out of 481239
+ 45486 string characters out of 5920377
+ 292045 words of memory out of 5000000
+ 18466 multiletter control sequences out of 15000+600000
+ 538488 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,46p,3370b,1752s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/
-enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on maindraft.pdf (32 pages, 641715 bytes).
+ 30i,8n,37p,3275b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1200.pfb>
+Output written on maindraft.pdf (33 pages, 984049 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 175 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

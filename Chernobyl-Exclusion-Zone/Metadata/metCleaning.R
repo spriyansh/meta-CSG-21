@@ -101,9 +101,8 @@ write.csv(metadata, "finalMetadata.csv")
 ################ Missing data #################
 # Missing for sample number 5, 31 and 57 ######
 # Missing metatdata for group 2, 11 and 24 ####
-# Missing for Mock and black files ############
+# Missing for Mock and blanck files ############
 # Solution Mannually appending ################
 # Out of 146 files 14 files have no metadata ##
 # Proceeding with 132 files ################## 
 ###############################################
-

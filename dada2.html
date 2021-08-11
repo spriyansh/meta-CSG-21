@@ -1,0 +1,190 @@
+<!--Home Page -->
+<!--Designed by https://github.com/spriyansh-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Logos -->
+    <script src="https://kit.fontawesome.com/a050a6ddf3.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <!-- Bootstrap Bundle -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/dada2.css">
+
+    <!-- prism-css -->
+    <link rel="stylesheet" href="css/prism.css" />
+
+    <title>CSG-21</title>
+  </head>
+  <body>
+
+    <!-- head-block -->
+    <div class="container-fluid header1">
+      <h1 class="fs-1 fw-bold">DADA2</h1>
+    </div>
+
+    <!-- introduction -->
+    <div class="container-fluid">
+      <h2 class="fs-2">Introduction</h2>
+      <p class="paraL">ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius. ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+    </div>
+
+    <hr>
+
+    <!-- filter and trim -->
+
+    <div class="container-fluid filterTrim">
+      <div class="row">
+
+        <div class="col-md-8 col-sm-12">
+          <h3 class="fs-3 h3-L">Filter & Trim</h3>
+          <p class="paraL">ipsum dolor es quam, eget feugiat id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at,  odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 codeL">
+          <pre class="code codeL">
+            <code class="language-R codeL">
+              # Trimming
+              for(i in seq_along(fnFs)) {
+                filterAndTrim(c(fnFs[[i]], fnRs[[i]]),
+                c(filtFs[[i]], filtRs[[i]]),
+                trimLeft=10, truncLen=245,
+                maxN = 0, maxEE = 1, multithread=TRUE,
+                matchIDs=TRUE, truncQ=2, compress=TRUE)
+              </code>
+          </pre>
+        </div>
+
+        <hr>
+
+        <!-- Error Estimation -->
+
+        <div class="container-fluid filterTrim">
+          <div class="row">
+
+            <div class="col-md-4 col-sm-12 codeR">
+              <pre class="code">
+                <code class="language-R">
+                  # Setting seed
+                  set.seed(20233083)
+
+                  # Learn forward error rates
+                  errF <- learnErrors(filtFs, nbases=1e8,
+                                  multithread=TRUE)
+
+                  # Learn reverse error rates
+                  errR <- learnErrors(filtRs, nbases=1e8,
+                                  multithread=TRUE)
+                  </code>
+              </pre>
+            </div>
+
+            <div class="col-md-8 col-sm-12">
+              <h3 class="fs-3 h3-R">Error Estimation</h3>
+              <p class="paraR">ipsum dolor sit ng elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+            </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Sample Inference -->
+
+    <div class="container-fluid filterTrim">
+      <div class="row">
+
+        <div class="col-md-8 col-sm-12">
+          <h3 class="fs-3 h3-L">Sample Inference</h3>
+          <p class="paraL">ipsum dolor sit ng elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 codeL">
+          <pre class="code">
+            <code class="language-R">
+              # Sample Inference
+              for(sam in sample.names) {
+                cat("Processing:", sam, "\n")
+                derepF <- derepFastq(filtFs[[sam]])
+                ddF <- dada(derepF, err=errF, multithread=TRUE)
+                derepR <- derepFastq(filtRs[[sam]])
+                ddR <- dada(derepR, err=errR, multithread=TRUE)
+                merger <- mergePairs(ddF, derepF, ddR, derepR)
+                mergers[[sam]] <- merger
+              }
+              </code>
+          </pre>
+        </div>
+
+
+        <hr>
+
+        <!-- Chimera Removal -->
+
+        <div class="container-fluid filterTrim">
+          <div class="row">
+
+            <div class="col-md-4 col-sm-12 codeR">
+              <pre class="code">
+                <code class="language-R">
+                  # Make Sequence Table
+                  seqtab.all <- makeSequenceTable(mergers[!grepl("Mock",
+                            names(mergers))])
+
+                  # Removing Chimera
+                  seqtab <- removeBimeraDenovo(seqtab.all,
+                            multithread=TRUE)
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-md-8 col-sm-12">
+              <h3 class="fs-3 h3-R">Chimera Removal</h3>
+              <p class="paraR">ipsum dolore, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magnant eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+            </div>
+
+        </div>
+        </div>
+
+        <hr>
+
+        <!-- Taxonomy Assignment -->
+
+        <div class="container-fluid">
+        <div class="row">
+
+        <div class="col-md-8 col-sm-12">
+          <h3 class="fs-3 h3-L">Taxonomy Assignment</h3>
+          <p class="paraL">ipsum dolor sit les nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 codeL">
+          <pre class="code">
+            <code class="language-R">
+              asv_silva_tax <- assignTaxonomy(seqtab,
+                        "silva_nr99_v138_train_set.fa.gz",
+                        multithread=TRUE)
+              </code>
+          </pre>
+        </div>
+<hr>
+
+<div class="container-fluid downloader">
+  <h2>Want the entire script?</h2>
+  <button class="custom_button" type="button" name="button">Click to download</button>
+
+</div>
+
+<!-- Divison for footer -->
+<footer class="text-center footer">
+Footer
+</footer>
+
+<!-- js -->
+<script src="js/prism.js"></script>
+  </body>
+</html>

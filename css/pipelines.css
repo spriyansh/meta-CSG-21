@@ -1,0 +1,122 @@
+body{
+  text-align: center;
+  background-color: #EAEAEA;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 991px) {
+  .pageHeading{
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .subHeading{
+    font-size: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  .subHeading2{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .subHeading3{
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #phy2{
+    padding-top: 45px;
+    margin-bottom: 81px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 990px) {
+
+  .pageHeading{
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .subHeading{
+    font-size: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.3rem;
+    text-align: left;
+  }
+
+  .subHeading2{
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .subHeading3{
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #mothur_logo{
+    height: 150px;
+  }
+
+  #dada_logo{
+    padding-top: 30px;
+    height: 100px;
+    width: 200px;
+  }
+  #phylo_logo{
+    height: 125px;
+  }
+
+  #conet_logo{
+    padding-top: 20px;
+    height: 125px;
+  }
+
+  #phy2{
+    padding-top: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.heading_block{
+background-color:  #08D9D6;
+color: #222831;
+}
+
+.downstream_block{
+  padding-bottom: 2rem;
+}
+
+.custom_button{
+  background-color: #222831;
+  color: white;
+}
+
+.custom_button:hover{
+  background-color: #222831;
+  color: hotpink;
+  transition: transform .1s;
+  transform: scale(1.1);
+}
+
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #393E46;
+  color: #EEEEEE;
+  text-align: center;
+}

@@ -1,0 +1,239 @@
+<!--Home Page -->
+<!--Designed by https://github.com/spriyansh-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Logos -->
+    <script src="https://kit.fontawesome.com/a050a6ddf3.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <!-- Bootstrap Bundle -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/phylo.css">
+
+    <!-- prism-css -->
+    <link rel="stylesheet" href="css/prism.css" />
+
+    <title>CSG-21</title>
+  </head>
+  <body>
+
+    <!-- head-block -->
+    <div class="container-fluid header1">
+      <h1 class="fs-1 fw-bold">PhyloSeq</h1>
+    </div>
+
+    <!-- introduction -->
+    <div class="container-fluid">
+      <h2 class="fs-2">Introduction</h2>
+      <p class="paraL">ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius. ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+    </div>
+
+    <hr>
+
+    <!-- Object Creation -->
+
+    <div class="container-fluid filterTrim">
+      <div class="row">
+
+        <div class="col-md-5 col-sm-12">
+          <h3 class="fs-3 h3-L">PhyloSeq Object</h3>
+          <p class="paraL">ipsum dolor es quam, eget feugiat id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at,  odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+        </div>
+
+        <div class="col-md-7 col-sm-12 codeL">
+          <pre class="code codeL">
+            <code class="language-R codeL">
+# Reading taxonomic annotations
+Taxa <- tax_table(as.matrix(read.csv("asv_silva_tax_raw.tsv", sep = "\t", row.names = 1)))
+
+# Reading Sequence Variants
+otu <- otu_table(as.matrix(read.csv("ASV_abundance_raw.tsv", sep = "\t", row.names= 1)),
+ taxa_are_rows = T)
+
+# Reading Metadata
+metadata <- read.csv("Meta_data.tsv", sep = "\t")
+
+# Adding X to s_number
+metadata$s_number <- sub("^", "X", metadata$s_number)
+
+# Column to rownames
+Samples  <- sample_data(metadata %>%  tibble::column_to_rownames("s_number"))
+
+# Reading the tree
+tree <- read.tree("asv_tree.tree")
+
+# Creating Object
+otu_PS <- phyloseq(otu, Taxa, Samples,phy_tree(tree))
+
+# Summary
+otu_PS
+              </code>
+          </pre>
+        </div>
+
+        <hr>
+
+        <!-- Removing the NAs and uncharacterized Phyla -->
+
+        <div class="container-fluid filterTrim">
+          <div class="row">
+
+            <div class="col-md-7 col-sm-12 codeR">
+              <pre class="code">
+                <code class="language-R">
+                  # Removing the NAs and uncharacterized Phyla
+temp_df <- as.data.frame(tax_table(otu_PS))
+
+unclassified <- subset(temp_df, grepl("unclassified",
+                                temp_df$Phylum))$Phylum
+
+ps0 <- subset_taxa(otu_PS, !is.na(Phylum) & !Phylum %in% c("", "uncharacterized"))
+
+# Summary Before and After
+otu_PS
+ps0
+
+                  </code>
+              </pre>
+            </div>
+
+            <div class="col-md-5 col-sm-12">
+              <h3 class="fs-3 h3-R">Removing the NAs and uncharacterized Phyla</h3>
+              <p class="paraR">ipsum dolor sit ng elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+            </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Prevalence -->
+
+    <div class="container-fluid filterTrim">
+      <div class="row">
+
+        <div class="col-md-5 col-sm-12">
+          <h3 class="fs-3 h3-L">Average and Total prevalence</h3>
+          <p class="paraL">ipsum dolor sit ng elit. Nulla tincidunt ultricies quam, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+        </div>
+
+        <div class="col-md-7 col-sm-12 codeL">
+          <pre class="code">
+            <code class="language-R">
+              # Compute prevalence of each feature, store as data.frame
+prevdf = apply(X = otu_table(ps0),MARGIN = ifelse(taxa_are_rows(ps0), yes = 1, no = 2),
+               FUN = function(x){sum(x > 0)})
+
+# Add taxonomy and total read counts to this data.frame
+prevdf = data.frame(Prevalence = prevdf,TotalAbundance = taxa_sums(ps0),tax_table(ps0))
+
+# Computing average and total prevalence
+temp_df <- plyr::ddply(prevdf, "Phylum", function(df1){cbind(mean(df1$Prevalence),sum(df1$Prevalence))})
+temp_df
+
+# Vector to be removed
+filterPhyla <- temp_df[temp_df$`2` < 100,]$Phylum
+
+# Filter entries with unidentified Phylum.
+ps1 = subset_taxa(ps0, !Phylum %in% filterPhyla)
+
+# Summary
+otu_PS
+ps0
+ps1
+              </code>
+          </pre>
+        </div>
+
+
+        <hr>
+
+        <!-- Prevalence FilterChimera Removal -->
+
+        <div class="container-fluid filterTrim">
+          <div class="row">
+
+            <div class="col-md-7 col-sm-12 codeR">
+              <pre class="code">
+                <code class="language-R">
+                  # Subset to the remaining phyla
+prevdf1 = subset(prevdf, Phylum %in% get_taxa_unique(ps1, "Phylum"))
+
+#  Define prevalence threshold as 5% of total samples
+prevalenceThreshold = 0.05 * nsamples(ps0)
+prevalenceThreshold
+
+## [1] 3.3 = 3
+
+# Execute prevalence filter, using `prune_taxa()` function
+keepTaxa = rownames(prevdf1)[(prevdf1$Prevalence >= prevalenceThreshold)]
+ps2 = prune_taxa(keepTaxa, ps0)
+
+# Summary
+otu_PS
+ps0
+ps1
+ps2
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-md-5 col-sm-12">
+              <h3 class="fs-3 h3-R">Prevalence Filter</h3>
+              <p class="paraR">ipsum dolore, ante nec placerat molestie, quam lorem luctus augue, a volutpat magna eros id arcu. Mauris nulla lorem, tincidunt eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius, eget feugiat mi tincidunt nec. Nulla pellentesque, ante nec placerat molestie, quam lorem luctus augue, a volutpat magnant eu bibendum at, convallis vitae enim. Integer sit amet nisl euismod, sodales nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+            </div>
+
+        </div>
+        </div>
+
+        <hr>
+
+        <!-- Agglo -->
+
+        <div class="container-fluid">
+        <div class="row">
+
+        <div class="col-md-5 col-sm-12">
+          <h3 class="fs-3 h3-L">Taxonomic Agglomeration</h3>
+          <p class="paraL">ipsum dolor sit les nisi eget, accumsan nisi. Ut malesuada diam odio, non pharetra dolor placerat et. Mauris sagittis ligula vitae dolor finibus tempus. Donec condimentum nec ipsum ac varius.</p>
+        </div>
+
+        <div class="col-md-7 col-sm-12 codeL">
+          <pre class="code">
+            <code class="language-R">
+              # How many genera would be present after filtering?
+length(get_taxa_unique(ps1, taxonomic.rank = "Genus"))
+
+ps3 = tax_glom(ps2, "Genus", NArm = TRUE)
+
+# Summary
+otu_PS
+ps0
+ps1
+ps2
+ps3
+              </code>
+          </pre>
+        </div>
+<hr>
+
+<div class="container-fluid downloader">
+  <h2>Want the entire script?</h2>
+  <a href="https://raw.githubusercontent.com/spriyansh/meta-CSG-21/main/DADA2/dada2_Pipeline.R"><button class="custom_button" type="button" name="button"> Click to download</button></a>
+
+</div>
+
+<!-- Divison for footer -->
+<footer class="text-center footer">
+Footer
+</footer>
+
+<!-- js -->
+<script src="js/prism.js"></script>
+  </body>
+</html>
